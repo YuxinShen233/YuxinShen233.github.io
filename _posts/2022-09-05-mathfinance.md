@@ -4,6 +4,6 @@ title: Sensitivity of Robust Optimization over an Adapted Wasserstein Ambiguity 
 date: 2022-09-05 
 description: A talk given at  London–Oxford–Warwick Mathematical Finance Workshop
 tags: OptimalTransport DRO
-categories: Talks
+categories: talks
 ---
 See [slides](/assets/pdf/AWDRO.pdf) for details.
