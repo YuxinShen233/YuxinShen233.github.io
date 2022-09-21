@@ -24,7 +24,7 @@ pagination:
   <div class="tag-list">
     <ul class="p-0 m-0">
       {% for tag in site.display_tags %}
-        <li>
+         <li>
           <i class="fas fa-hashtag fa-sm"></i> <a href="{{ tag | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
         </li>
         {% unless forloop.last %}
