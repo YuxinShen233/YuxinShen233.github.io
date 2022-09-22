@@ -13,6 +13,6 @@ This is an introductory talk on the causal optimal transport problem and its app
 We discuss the notion of causality under both Monge's and Kantorovich's formulation.
 We introduce the adapted Wasserstein metric arising from the causal optimal transport and compare it to the classical Wasserstein distance.
 A distibutionally robust optimization problem over an adapted Wasserstein ambiguity set is considered.
-We give an explicit formula of the sensitivity of the value function.
+We give an explicit formula of the sensitivity to the model uncertainty.
 
-See [slides](/assets/pdf/OT.pdf) for details.
+See [slides](/assets/pdf/OT.pdf) for more details.
