@@ -3,7 +3,7 @@ layout: post
 title: Sensitivity of Robust Optimization over an Adapted Wasserstein Ambiguity Set
 date: 2022-09-05 
 description: A talk given at  London–Oxford–Warwick Mathematical Finance Workshop
-tags: optimal-transport robust-optimization
+tags: ['optimal transport', 'robust optimization']
 categories: talks
 ---
 
