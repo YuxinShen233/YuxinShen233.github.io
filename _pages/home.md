@@ -20,9 +20,9 @@ social: false  # includes social icons at the bottom of the page
 
 Hi, all!
 
-I am Yifan Jiang (蒋亦凡), a second-year student in the Mathematics of Random Systems CDT. 
-Before coming to Oxford, I studied as an undergraduate in Mathematics at Fudan University. 
+I am Yifan Jiang (蒋亦凡), a second-year student in the Mathematics of Random Systems CDT.
+Before coming to Oxford, I studied as an undergraduate in Mathematics at Fudan University.
 I have a broad interest in stochastic analysis and its applications in finance.
 
-It is my honor to be supervised by Professor Jan Obłój and Professor Gui-Qiang Chen. 
+It is my honor to be supervised by Professor Jan Obłój and Professor Gui-Qiang Chen.
 My DPhil research is focused on the Wasserstein distributional sensitivity to model uncertainty in dynamic context.
