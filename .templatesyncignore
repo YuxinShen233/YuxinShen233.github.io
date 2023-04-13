@@ -1,10 +1,11 @@
 .github/workflows/
 _data/cv.yml
 _data/venues.yml
+_includes/head.html
 _bibliography/papers.bib
 _pages/
 _posts/
-_sass/themes.scss
+_sass/_themes.scss
 assets/img
 assets/pdf
 _config.yml
