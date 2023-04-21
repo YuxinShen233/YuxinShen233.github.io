@@ -18,7 +18,7 @@ categories: codes
 2. Create a remote jupyter notebook on the server.
 
     ```shell
-    jupyter notebook -no-browser --port=8080
+    jupyter notebook --no-browser --port=8080
     ```
 
 3. Connect to the remote jupyter notebook in a new terminal.
