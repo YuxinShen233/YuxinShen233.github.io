@@ -29,19 +29,18 @@ codeBlocks.forEach(function (codeBlock) {
 
       setTimeout(function () {
         copyButton.innerText = 'Copy';
-        // copyButton.innerHTML = '<i class="fas fa-clipxxboard"></i>';
+        // copyButton.innerHTML = '<i class="fas fa-clipboard"></i>';
       }, waitFor);
     });
     
     // create wrapper div
-    var wrapperDiv = document.createElement('div');
-    wrapperDiv.className = 'code-display-wrapper';
+    var wrapper = document.createElement('div');
+    wrapper.className = 'code-display-wrapper';
 
     // add copy button and code block to wrapper div
-    const reference = codeBlock.parentElement;
-    const parent = codeBlock.parentElement.parentElement;
-    parent.insertBefore(wrapperDiv, reference);
-    wrapperDiv.append(codeBlock.parentElement);
-    wrapperDiv.append(copyButton);
+    const parent = codeBlock.parentElement;
+    parent.insertBefore(wrapper, codeBlock);
+    wrapper.append(codeBlock);
+    wrapper.append(copyButton);
   }
 });

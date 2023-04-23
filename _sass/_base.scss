@@ -827,27 +827,24 @@ pre {
 
 .code-display-wrapper {
   position: relative;
-  margin: 0 0 1rem;
+  .copy {
+    background: var(--global-card-bg-color);
+    border-color: var(--global-theme-color);
+    border-radius: 6px;
+    border-style: none;
+    color: var(--global-text-color);
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 0;
+    position: absolute;
+    right: .15rem;
+    top: .12rem;
+  }
   &:active .copy,
   &:focus .copy,
   &:hover .copy {
-    color: var(--global-theme-color);
-    opacity: 1;
-    position: absolute;
-    right: .2rem;
-    top: .12rem;
+    color: var(--global-hover-color);
+    background: var(--global-bg-color);
+    opacity: 0.7;
   }
-}
-
-.copy {
-  background: var(--global-card-bg-color);
-  border-color: var(--global-bg-color);
-  border-radius: .3rem;
-  border-style: none;
-  color: var(--global-text-color);
-  font-size: medium;
-  opacity: 0;
-  position: absolute;
-  right: .25rem;
-  top: .25rem;
 }
