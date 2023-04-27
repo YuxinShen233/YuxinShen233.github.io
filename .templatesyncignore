@@ -10,4 +10,5 @@ _sass/_themes.scss
 _sass/_variables.scss
 assets/img
 assets/pdf
+blog/index.html
 _config.yml

@@ -5,13 +5,15 @@ date: 2023-04-20
 description: Cheatsheet of jupyter, tmux, etc.
 tags: ['python', 'tmux']
 categories: codes
+toc:
+    sidebar: left
 ---
 
 ## Jupyter Notebook
 
 1. Login your remote server.
 
-    ```bash
+    ```shell
     ssh username@server
     ```
 
@@ -21,7 +23,15 @@ categories: codes
     jupyter notebook --no-browser --port=8080
     ```
 
-3. Connect to the remote jupyter notebook in a new terminal.
+   Alternatively, you can define a macro in your configuration file (`.bashrc`) on the remote server.
+
+    ```shell
+    function nb(){
+        jupyter notebook --no-browser --port=8080
+    }
+    ```
+
+3. Open a new local terminal and connect to the remote jupyter notebook
 
     ```shell
     ssh -L 8080:localhost:8080 username@server
@@ -29,26 +39,42 @@ categories: codes
 
 4. Open <https://localhost:8080> in your browser.
 
+## SSH
+
+It is quite tedious to repeat above commands every time.
+Here's how you can configure your own SSH profile to make it easier to connect to your remote server:
+
+1. Add the following profile to your `.ssh/config` file.
+
+    ```nginx
+    Host myhost
+        Hostname server
+        User username
+        Port myport
+        LocalForward 8080 localhost:8080
+    ```
+
+2. Connect and listen to the remote server simply through `ssh myhost`.
+
 ## Tmux
 
 Tmux is a "terminal multiplexer", it enables a number of terminals (or windows) to be accessed and controlled from a single terminal.
 
-1. Install [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm).
-2. Install [Tmux Resurrect](https://github.com/tmux-plugins/tmux-resurrect).
-3. Start a new session with the name *mysession*.
+1. Install [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) and [Tmux Resurrect](https://github.com/tmux-plugins/tmux-resurrect).
+2. Start a new session with the name *mysession*.
 
     ```shell
     tmux new -s mysession
     ```
 
-4. Save session `Ctrl-b+Ctrl-s` and restore session `Ctrl-b+Crtl-r`.
-5. Show all sessions.
+3. Save a session by `Ctrl-b+Ctrl-s` and restore a session by `Ctrl-b+Crtl-r`.
+4. Show all sessions.
 
-   ```shell
-   tmux ls
-   ```
+    ```shell
+    tmux list-session
+    ```
 
-6. Kill session *mysession*.
+5. Kill session *mysession*.
 
     ```shell
     tmux kill-session -t mysession

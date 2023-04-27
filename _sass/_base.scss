@@ -845,6 +845,20 @@ pre {
   &:hover .copy {
     color: var(--global-hover-color);
     background: var(--global-bg-color);
-    opacity: 0.7;
+    opacity: 0.6;
   }
 }
+
+nav[data-toggle="toc"] {
+  top: 5rem;
+}
+
+/* small screens */
+@media (max-width: 768px) {
+  /* override stickyness so that the navigation does not follow scrolling */
+  nav[data-toggle="toc"] {
+    visibility: hidden;
+    height: 0;
+    top: 0;
+  }
+} 

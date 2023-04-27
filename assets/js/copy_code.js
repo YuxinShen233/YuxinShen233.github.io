@@ -8,6 +8,7 @@ codeBlocks.forEach(function (codeBlock) {
     copyButton.type = 'button';
     copyButton.ariaLabel = 'Copy code to clipboard';
     copyButton.innerText = 'Copy';
+    // copyButton.style.border='1px solid #1C1C1D';
     // copyButton.innerHTML = '<i class="fas fa-clipboard"></i>';
 
     // get code from code block and copy to clipboard
