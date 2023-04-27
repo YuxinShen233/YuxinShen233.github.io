@@ -6,9 +6,13 @@ subtitle: EASTBIO PhD student in University of Edinburgh
 
 profile:
   align: right
-  image: prof_pic
-  image_circular: false # crops the image to make it circular
+  image: yuxin.jpg
+  image_circular: true # crops the image to make it circular
   address: >
+    <p>Room 2.11</p> 
+    <p>Waddington Building</p> 
+    <p>King's Buildings Campus</p>
+    <p>Edinburgh</p>
 
 
 news: false  # includes a list of news items

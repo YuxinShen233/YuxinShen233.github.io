@@ -14,8 +14,8 @@ footer_text: >
 keywords:   # add your own keywordbus or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🧬 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
-
+icon: 🐱 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+# 🧬
 
 url: https://YuxinShen233.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
@@ -69,7 +69,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 github_username: YuxinShen233 # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
-linkedin_username: # your LinkedIn user name
+linkedin_username: yuxin-shen-688aaa1b8 # your LinkedIn user name
 scholar_userid:  # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 orcid_id:  # your ORCID ID
@@ -111,7 +111,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 blog_name: Blog # blog_name will be displayed in your blog page
 blog_nav_title: Blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: "We must know. We will know."
+blog_description: abc
 permalink: /blog/:year/:title/
 
 # Pagination
